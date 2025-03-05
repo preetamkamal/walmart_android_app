@@ -1,0 +1,16 @@
+{
+  "products": [
+    {
+      "productId": "1234",
+      "productName": "product1",
+      "price": "8347",
+      "productImage": "folder1/img-1.jpg"
+    },
+    {
+      "productId": "324234",
+      "productName": "product2",
+      "price": "234",
+      "productImage": "folder2/img-2.jpg"
+    }
+  ]
+}
