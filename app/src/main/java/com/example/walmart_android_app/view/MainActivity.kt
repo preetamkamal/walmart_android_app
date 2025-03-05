@@ -7,7 +7,6 @@ import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.walmart_android_app.R
-import com.example.walmart_android_app.view.ProductAdapter
 import com.example.walmart_android_app.viewmodel.ProductViewModel
 
 class MainActivity : AppCompatActivity() {

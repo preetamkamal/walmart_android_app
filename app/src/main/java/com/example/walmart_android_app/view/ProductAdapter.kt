@@ -3,7 +3,6 @@ package com.example.walmart_android_app.view
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.walmart_android_app.R
@@ -17,6 +16,7 @@ class ProductAdapter(private val productList: List<Product>) :
         val ivProductImage: TextView = itemView.findViewById(R.id.ivProductImage)
         val tvProductName: TextView = itemView.findViewById(R.id.tvProductName)
         val tvProductPrice: TextView = itemView.findViewById(R.id.tvProductPrice)
+        val tvProductId: TextView = itemView.findViewById(R.id.tvProductId)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ProductViewHolder {
@@ -27,9 +27,10 @@ class ProductAdapter(private val productList: List<Product>) :
 
     override fun onBindViewHolder(holder: ProductViewHolder, position: Int) {
         val product = productList[position]
-        holder.tvProductName.text = product.productName
+        holder.tvProductName.text = "Name: ${product.productName}"
         holder.tvProductPrice.text = "Price: ${product.price}"
-        holder.ivProductImage.text = product.productImage
+        holder.ivProductImage.text = "Image: ${product.productImage}"
+        holder.tvProductId.text = "ProductId: ${product.productId}"
     }
 
     override fun getItemCount(): Int = productList.size
